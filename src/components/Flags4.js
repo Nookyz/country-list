@@ -7,16 +7,6 @@ function Flags4() {
   const [value, setValue] = useState('')
   const filteredCountry = search(countryList, value, ({ country }) => country)
 
-  useLayoutEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow
-
-    document.body.style.overflow = 'hidden'
-
-    return () => {
-      document.body.style.overflow = originalStyle
-    }
-  }, [])
-
   return (
     <Wrapper>
       <Header>
@@ -39,8 +29,8 @@ const Wrapper = styled.div`
 
 const CountryList = styled.div`
   padding-top: 80px;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
+  overflow-y: auto;
   background: #222254;
 `
 
