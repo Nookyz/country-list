@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 import { countryList } from '../country-list'
 import { search } from '../search'
