@@ -27,6 +27,7 @@ const Wrapper = styled.div``
 
 const CountryList = styled.div`
   padding-top: 80px;
+  background: #222254;
 `
 
 const Header = styled.div`

@@ -23,12 +23,16 @@ function Flags4() {
   )
 }
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  background: blue;
+`
 
 const CountryList = styled.div`
   padding-top: 80px;
   height: 100vh;
   overflow: auto;
+
+  background: #222254;
 `
 
 const Header = styled.div`
