@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
 import styled from 'styled-components'
 import { countryList } from '../country-list'
 import { search } from '../search'
@@ -6,6 +6,16 @@ import { search } from '../search'
 function Flags2() {
   const [value, setValue] = useState('')
   const filteredCountry = search(countryList, value, ({ country }) => country)
+
+  useLayoutEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow
+
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = originalStyle
+    }
+  }, [])
 
   return (
     <Wrapper>
@@ -28,6 +38,7 @@ const Wrapper = styled.div``
 const CountryList = styled.div`
   padding-top: 80px;
   background: #222254;
+  overflow-y: auto;
 `
 
 const Header = styled.div`
