@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { countryList } from '../country-list'
 import { search } from '../search'
 
-function Flags2() {
+function Flags3() {
   const [value, setValue] = useState('')
   const filteredCountry = search(countryList, value, ({ country }) => country)
 
@@ -26,12 +26,11 @@ function Flags2() {
 const Wrapper = styled.div``
 
 const CountryList = styled.div`
-  padding-top: 80px;
+  padding-top: 10px;
 `
 
 const Header = styled.div`
-  max-width: 768px;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: 72px;
@@ -60,4 +59,4 @@ const Input = styled.input`
   font-size: 16px;
 `
 
-export default Flags2
+export default Flags3
