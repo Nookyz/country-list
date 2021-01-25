@@ -6,7 +6,12 @@ import styled, { createGlobalStyle } from 'styled-components'
 // import Flags2 from './Flags2'
 // import Flags3 from './Flags3'
 // import Flags4 from './Flags4'
-import DatePicker from './Calendar/Calendar'
+// import DatePicker from './Calendar/Calendar'
+// import MyInput from './ComponentInput'
+// import Test from './Test'
+// import TextArea from './TextArea'
+// import List from './List'
+import Inputs  from './Inputs/Inputs'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -18,11 +23,12 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     height: 100%;
+    background: #e3e0f1;
   }
 
   #root {
     height: 100%;
-    max-width: 768px;
+    max-width: 552px;
     margin: 0px auto;
   }
 `
@@ -31,7 +37,7 @@ function App() {
   return (
     <Container>
       <GlobalStyle />
-      <DatePicker />
+      <Inputs />
     </Container>
   )
 }

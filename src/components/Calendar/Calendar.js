@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import moment from 'moment'
 import { useState } from 'react'
-
 // import Heading from './Heading'
 import Days from './Days'
 
