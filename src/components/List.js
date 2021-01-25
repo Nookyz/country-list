@@ -1,6 +1,4 @@
-import React, { useRef } from 'react';
-import styled from 'styled-components'
-import Li from './Li'
+import React from 'react';
 
 const list = [
   {

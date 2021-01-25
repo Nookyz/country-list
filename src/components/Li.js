@@ -1,5 +1,3 @@
-import { useRef } from 'react';
-import styled from 'styled-components'
 
 const Li = ({ item, listRef }) => {
   // const listRef = useRef(null);
