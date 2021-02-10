@@ -11,7 +11,8 @@ import styled, { createGlobalStyle } from 'styled-components'
 // import Test from './Test'
 // import TextArea from './TextArea'
 // import List from './List'
-import Inputs  from './Inputs/Inputs'
+// import Inputs  from './Inputs/Inputs'
+import TextAreas  from './TextAreas'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -37,7 +38,7 @@ function App() {
   return (
     <Container>
       <GlobalStyle />
-      <Inputs />
+      <TextAreas />
     </Container>
   )
 }
